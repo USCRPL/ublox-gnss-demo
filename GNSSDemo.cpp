@@ -52,7 +52,6 @@ void GNSSDemo::test_configure()
     {
         printf("Configuration failed.\r\n");
     }
-
 }
 
 void GNSSDemo::test_antennaPower() {
@@ -197,9 +196,9 @@ int gps_test_main()
         //MENU. ADD AN OPTION FOR EACH TEST.
         printf("Select a test: \n\r");
         printf("0.  Exit test suite\r\n");
-        printf("1.  Reconfigure GNSS Settings (must be done first to get data from GNSSs that have not been configured or those without flash memory)\r\n");
+        printf("1.  Reconfigure GNSS settings (must be done first to get data from GNSSs that have not been configured or those without flash memory)\r\n");
         printf("2.  Read antenna power stats\r\n");
-        printf("3.  View Data in GNSS HUD\r\n");
+        printf("3.  View data in GNSS HUD\r\n");
         printf("4.  Read satellite system status\r\n");
         printf("5.  Software reset GNSS (hot start)\r\n");
 
