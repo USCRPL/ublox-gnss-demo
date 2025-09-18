@@ -100,9 +100,8 @@ void GNSSDemo::test_HUD()
 	bargraph.setHeights(heights);
 	bargraph.setLabels(&labels[0][0]);
 
-    FileHandle *stdin_fh = mbed_file_handle(STDIN_FILENO);
-    stdin_fh->set_blocking(false);
-
+	FileHandle *stdin_fh = mbed_file_handle(STDIN_FILENO);
+	
 	while(!stdin_fh->readable()) // exit when the user types a char
 	{
 		while(updateTimer.elapsed_time() < UPDATE_RATE)
@@ -170,8 +169,6 @@ void GNSSDemo::test_HUD()
 		bargraph.setNumCols(currentIndex);
 		bargraph.print();
 	}
-
-    stdin_fh->set_blocking(true);
 }
 
 void GNSSDemo::hotStartTest()
